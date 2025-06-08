@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\",
+  "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\programacion ll\\proyecto 1\\proyecto1_grupo1_c2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Models{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Models{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:Training Statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAA==",
+              "Title": "Training Statistics.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs",
+              "RelativeDocumentMoniker": "Training Statistics.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs",
+              "RelativeToolTip": "Training Statistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:16:57.893Z",
+              "WhenOpened": "2025-06-08T01:11:28.201Z",
+              "IsPinned": true,
               "EditorCaption": ""
             }
           ]

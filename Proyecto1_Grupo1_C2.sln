@@ -1,9 +1,38 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto1_Grupo1_C2", "Proyecto1_Grupo1_C2.csproj", "{712426B2-CD9A-4411-AE0C-937972F79B54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Athletes.cs = Athletes.cs
+		Cardio Exercise.cs = Cardio Exercise.cs
+		Exercise.cs = Exercise.cs
+		Flexibility Exercise.cs = Flexibility Exercise.cs
+		Gym routine.cs = Gym routine.cs
+		Strength exercise.cs = Strength exercise.cs
+		Training Statistics.cs = Training Statistics.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enums", "Enums", "{CD4A819A-A978-44F5-A437-5D81C0F3AA8D}"
+	ProjectSection(SolutionItems) = preProject
+		Athlete Level.cs = Athlete Level.cs
+		Exercise Type.cs = Exercise Type.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{050187AC-3AE8-44BF-BF8B-FDA518E00E2A}"
+	ProjectSection(SolutionItems) = preProject
+		File Manager.cs = File Manager.cs
+		Suggestions Routines.cs = Suggestions Routines.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{C63C7AFC-E68D-4EBB-9064-5BC4760C03E5}"
+	ProjectSection(SolutionItems) = preProject
+		Event Registration.cs = Event Registration.cs
+		Program.cs = Program.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +47,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD4A819A-A978-44F5-A437-5D81C0F3AA8D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B80F2C55-EEC1-4CCF-9048-EEFA85E1CA37}

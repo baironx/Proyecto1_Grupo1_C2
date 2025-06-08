@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj": {}
+    "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj": {
+    "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj",
+        "projectUniqueName": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj",
         "projectName": "Proyecto1_Grupo1_C2",
-        "projectPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj",
+        "projectPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Proyecto1_Grupo1_C2.csproj",
         "packagesPath": "C:\\Users\\Cuadr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Programacion ll\\Proyecto 1\\Proyecto1_Grupo1_C2\\obj\\",
+        "outputPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
