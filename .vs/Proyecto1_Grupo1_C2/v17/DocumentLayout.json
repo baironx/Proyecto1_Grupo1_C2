@@ -11,20 +11,24 @@
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:19:19.413Z",
               "IsPinned": true,
@@ -58,7 +62,7 @@
               "RelativeDocumentMoniker": "Athlete.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
               "RelativeToolTip": "Athlete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:20:09.164Z",
               "IsPinned": true,
@@ -66,13 +70,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Routine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
               "RelativeDocumentMoniker": "Routine.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
               "RelativeToolTip": "Routine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:21:31.437Z",
               "IsPinned": true,
@@ -80,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "StrengthRoutine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrengthRoutine.cs",
               "RelativeDocumentMoniker": "StrengthRoutine.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrengthRoutine.cs",
               "RelativeToolTip": "StrengthRoutine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:22:01.892Z",
               "IsPinned": true,
@@ -94,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CardioRoutine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
               "RelativeDocumentMoniker": "CardioRoutine.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
               "RelativeToolTip": "CardioRoutine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:22:52.395Z",
               "IsPinned": true,
@@ -108,13 +112,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "RoutineSuggestionService.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\RoutineSuggestionService.cs",
+              "RelativeDocumentMoniker": "RoutineSuggestionService.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\RoutineSuggestionService.cs",
+              "RelativeToolTip": "RoutineSuggestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T19:31:41.926Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "DataManager.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
               "RelativeDocumentMoniker": "DataManager.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
               "RelativeToolTip": "DataManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:23:17.242Z",
               "IsPinned": true,

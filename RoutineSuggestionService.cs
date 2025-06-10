@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using Proyecto1_Grupo1_C2.Entities;
-using Proyecto1_Grupo1_C2.Services;
-
 
 namespace Proyecto1_Grupo1_C2
 {
-    class Program
+    public static class RoutineSuggestionService
     {
-        static void Main(string[] args)
+        public static List<string> GetSuggestedRoutines(Athlete athlete)
         {
 
         }

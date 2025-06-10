@@ -1,16 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Proyecto1_Grupo1_C2.Entities
 {
     public class Athlete
     {
         public string Name { get; set; }
-        public double Height { get; set; }
         public double Weight { get; set; }
+        public double Height { get; set; }
         public string Goals { get; set; }
         public string Level { get; set; }
 
-        public Athlete(string name, double height, double weight, string goals, string level)
+        public Athlete(string name, double weight, double height, string goals, string level)
         {
             this.Name = name;
             this.Height = height;
@@ -20,7 +24,7 @@ namespace Proyecto1_Grupo1_C2.Entities
         }
         public override string ToString()
         {
-            return $"Nombre: {Name}, Altura: {Height} m, Peso: {Weight} kg, Objetivos: {Goals}, Nivel: {Level}";
+            return $"{Name} - {Weight} kg - {Height} m - {Goals} - {Level}";
         }
     }
 
