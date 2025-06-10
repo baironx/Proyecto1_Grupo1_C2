@@ -2,7 +2,7 @@
 
 namespace Proyecto1_Grupo1_C2.Entities
 {
-    internal class CardioRoutine
+    public class CardioRoutine : Routine
     {
     }
 }

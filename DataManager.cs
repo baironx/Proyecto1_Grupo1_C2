@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Proyecto1_Grupo1_C2.Services
 {
-    internal class DataManager
+    public static class DataManager
     {
+        private static string filePath = "datos.txt";
     }
 }

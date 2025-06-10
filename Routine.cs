@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace PProyecto1_Grupo1_C2.Entities
+namespace Proyecto1_Grupo1_C2.Entities
 {
-    internal class Routine
+    public abstract class Routine
     {
     }
 }
