@@ -1,10 +1,11 @@
-﻿//Programa principal: App Sistema de Registro de Entrenamiento Personal
+﻿using System;
+using System.Collections.Generic;
+using Proyecto1_Grupo1_C2.Entities;
+using Proyecto1_Grupo1_C2.Services;
 
-using System;
-
-namespace AppSistemaRegistroEntrenamientoPersonal.POO
+namespace Proyecto1_Grupo1_C2
 {
-    public class program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -12,4 +13,3 @@ namespace AppSistemaRegistroEntrenamientoPersonal.POO
         }
     }
 }
-

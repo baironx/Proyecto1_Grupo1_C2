@@ -2,3 +2,8 @@ C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Proyecto 1\Proyecto1_Grupo1_C
 C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Proyecto 1\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.AssemblyInfoInputs.cache
 C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Proyecto 1\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.AssemblyInfo.cs
 C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Proyecto 1\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.csproj.CoreCompileInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.AssemblyInfoInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.AssemblyInfo.cs
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.csproj.CoreCompileInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\Proyecto1_Grupo1_C2.sourcelink.json

@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Models{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Models{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:Training Statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Training Statistics.cs",
-              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs",
-              "RelativeDocumentMoniker": "Training Statistics.cs",
-              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Training Statistics.cs",
-              "RelativeToolTip": "Training Statistics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T01:11:28.201Z",
+              "WhenOpened": "2025-06-10T02:19:19.413Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Athlete.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
+              "RelativeDocumentMoniker": "Athlete.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
+              "RelativeToolTip": "Athlete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T02:20:09.164Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Routine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
+              "RelativeDocumentMoniker": "Routine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
+              "RelativeToolTip": "Routine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T02:21:31.437Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StrengthRoutine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrengthRoutine.cs",
+              "RelativeDocumentMoniker": "StrengthRoutine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrengthRoutine.cs",
+              "RelativeToolTip": "StrengthRoutine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T02:22:01.892Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CardioRoutine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
+              "RelativeDocumentMoniker": "CardioRoutine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
+              "RelativeToolTip": "CardioRoutine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T02:22:52.395Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
+              "RelativeDocumentMoniker": "DataManager.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
+              "RelativeToolTip": "DataManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T02:23:17.242Z",
               "IsPinned": true,
               "EditorCaption": ""
             }
