@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:strengthroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{712426B2-CD9A-4411-AE0C-937972F79B54}|Proyecto1_Grupo1_C2.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Athlete.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
               "RelativeDocumentMoniker": "Athlete.cs",
               "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
               "RelativeToolTip": "Athlete.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:20:09.164Z",
               "IsPinned": true,
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Routine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
               "RelativeDocumentMoniker": "Routine.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "StrengthRoutine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrengthRoutine.cs",
               "RelativeDocumentMoniker": "StrengthRoutine.cs",
@@ -93,12 +93,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T02:22:01.892Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "CardioRoutine.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
               "RelativeDocumentMoniker": "CardioRoutine.cs",
@@ -112,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "RoutineSuggestionService.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\RoutineSuggestionService.cs",
               "RelativeDocumentMoniker": "RoutineSuggestionService.cs",
@@ -126,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "DataManager.cs",
               "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
               "RelativeDocumentMoniker": "DataManager.cs",

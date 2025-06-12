@@ -16,3 +16,5 @@ namespace Proyecto1_Grupo1_C2
         }
     }
 }
+
+Odio esto ayudaaa!
