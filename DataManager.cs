@@ -14,3 +14,4 @@ namespace Proyecto1_Grupo1_C2.Services
         private static string routinesFilePath = "routines.txt";
     }
 }
+Console.WriteLine("Hola perros")
