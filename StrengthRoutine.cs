@@ -41,7 +41,7 @@ namespace Proyecto1_Grupo1_C2.Entities
             public double Weight { get; set; }
             public string MuscleGroup { get; set; }
 
-            public override string ToString()//Este metodo se usa para imprimir la informacion del ejercicio de fuerza
+            public override string ToString()//Este metodo se usa para imprimir la informacion del ejercicio de fuerza, use el TOstring para que se imprima toda la informacion  automaticamente cuando se llama al objeto
             {
                 return $"{Name}: {Sets}x{Reps}  {Weight}kg ({MuscleGroup})";// Devuelve un string con el nombre del ejercicio, las series, las repeticiones, el peso y el grupo muscular
             }
