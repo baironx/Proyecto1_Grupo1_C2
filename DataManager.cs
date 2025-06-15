@@ -43,7 +43,7 @@ namespace Proyecto1_Grupo1_C2.Services
                 }
             }  
         }
-    // falta migrar datos
+    // falta migrar datos sugerencias aceptables
                                 
 }
             
