@@ -16,5 +16,5 @@ namespace Proyecto1_Grupo1_C2
         }
     }
 }
-Console.WriteLine("PrubeaNueva");
+Console.WriteLine("PruebaNueva");
 
