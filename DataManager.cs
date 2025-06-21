@@ -46,7 +46,7 @@ namespace Proyecto1_Grupo1_C2.Services
    
         public static void MigrateOldData()
         {
-            string oldDataFilePath= "datos.txt"; //Ruta para los datos que no estan migrados ahun
+            string oldDataFilePath = "datos.txt";//Ruta para los datos que no estan migrados ahun
             
             if (!File.Exists(oldDataFilePath))//se necesita que el archivo exista, en todo caso de que no entonces sale
                 return;
