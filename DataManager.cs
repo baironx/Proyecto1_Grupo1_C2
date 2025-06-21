@@ -43,8 +43,43 @@ namespace Proyecto1_Grupo1_C2.Services
                 }
             }  
         }
-    // falta migrar datos sugerencias aceptables
-                                
+   
+        public static void MigrateOldData()
+        {
+            string oldDataFilePath= "datos.txt"; //Ruta para los datos que no estan migrados ahun
+            
+            if (!File.Exists(oldDataFilePath))//se necesita que el archivo exista, en todo caso de que no entonces sale
+                return;
+            var athletes = new List<Athlete>();//Listas vacias para almacenar datos
+            var routines = new List<Routine>();
+
+            foreach (var line in File.ReadAllLines(oldDataFilePath))//se leen todas las lineas
+            {
+                var parts = line.Split('/'); //Se dividen las lineas con slash
+                if (parts.Length < 4) // si la linea no tiene 4 partes la ignoramos
+                    continue;
+
+                if (parts[0].Trim().ToLower() == "athlete")//Se valida que veridicamente sea un registro de athlete
+                {
+                    athletes.Add(new Athlete//Se agrega el nuevo atleta y se convierten los datos a enteros y el nombre como cadena
+                                 {
+                                     Id = int.Parse(parts[1]),
+                                     Name = parts[2],
+                                     Age = int.Parse(parts[3])
+                                     });
+                {
+                    else if (parts[0].Trim().ToLower() == "routine")
+                    {
+                        routines.Add(new Routine//Se crea routine y se agrega a la lista igual entero, nombre de rutina y minutos
+                                     {
+                                         Id = int.Parse(parts[1]),
+                                         Name = parts[2],
+                                         Duration = int.Parse(parts[3])
+                                         });
+                    }
+            SaveData(athletes, routines);//Se guadan los datos que se migraron
+            File.Move(oldDataFilePath, oldDataFilePath + ".bak", overwrite: true);// renombramos el archivo para que no se migre otra vez 
+                        
 }
             
 
