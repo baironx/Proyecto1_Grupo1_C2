@@ -4,8 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proyecto1_Grupo1_C2.Entities
+namespace AppEntrenamientoPersonal.Entities
 {
+    /// <summary>
+    /// Represents an athlete with personal details and training goals.
+    /// </summary>
     public class Athlete
     {
         public string Name { get; set; }
@@ -14,11 +17,14 @@ namespace Proyecto1_Grupo1_C2.Entities
         public string Goals { get; set; }
         public string Level { get; set; }
 
+        /// <summary>
+        /// Constructs a new instance of the Athlete class.
+        /// </summary>
         public Athlete(string name, double weight, double height, string goals, string level)
         {
             this.Name = name;
-            this.Height = height;
             this.Weight = weight;
+            this.Height = height;
             this.Goals = goals;
             this.Level = level;
         }
@@ -27,6 +33,5 @@ namespace Proyecto1_Grupo1_C2.Entities
             return $"{Name} - {Weight} kg - {Height} m - {Goals} - {Level}";
         }
     }
-
 }
 

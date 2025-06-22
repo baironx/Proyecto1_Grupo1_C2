@@ -1,0 +1,29 @@
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\bin\Debug\net8.0\PruebaApp.exe
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\bin\Debug\net8.0\PruebaApp.deps.json
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\bin\Debug\net8.0\PruebaApp.runtimeconfig.json
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\bin\Debug\net8.0\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\bin\Debug\net8.0\PruebaApp.pdb
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.AssemblyInfoInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.AssemblyInfo.cs
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.csproj.CoreCompileInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\refint\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.pdb
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\PruebaApp.genruntimeconfig.cache
+C:\Users\Cuadr\Desktop\Universidad\Programacion ll\Archivos Visual Studio\PruebaApp\obj\Debug\net8.0\ref\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\bin\Debug\net8.0\PruebaApp.exe
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\bin\Debug\net8.0\PruebaApp.deps.json
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\bin\Debug\net8.0\PruebaApp.runtimeconfig.json
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\bin\Debug\net8.0\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\bin\Debug\net8.0\PruebaApp.pdb
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.AssemblyInfoInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.AssemblyInfo.cs
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.csproj.CoreCompileInputs.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.sourcelink.json
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\refint\PruebaApp.dll
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.pdb
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\PruebaApp.genruntimeconfig.cache
+C:\Users\Cuadr\Desktop\Universidad\Proyecto\Proyecto1_Grupo1_C2\obj\Debug\net8.0\ref\PruebaApp.dll

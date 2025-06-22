@@ -1,0 +1,3 @@
+Bairon Garcia,80,170,Definicion,Avanzado
+Fuerza,90,Alta,Pecho
+Fuerza,90,Alta,Espalda

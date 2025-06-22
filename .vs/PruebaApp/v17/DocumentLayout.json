@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:athlete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\strenghtroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:strenghtroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:routine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:cardioroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:routinesuggestionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto\\proyecto1_grupo1_c2\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|PruebaApp.csproj|solutionrelative:datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:24:15.395Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Athlete.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
+              "RelativeDocumentMoniker": "Athlete.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Athlete.cs",
+              "RelativeToolTip": "Athlete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:24:51.245Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Routine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
+              "RelativeDocumentMoniker": "Routine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\Routine.cs",
+              "RelativeToolTip": "Routine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:25:09.404Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StrenghtRoutine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrenghtRoutine.cs",
+              "RelativeDocumentMoniker": "StrenghtRoutine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\StrenghtRoutine.cs",
+              "RelativeToolTip": "StrenghtRoutine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:25:33.882Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CardioRoutine.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
+              "RelativeDocumentMoniker": "CardioRoutine.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\CardioRoutine.cs",
+              "RelativeToolTip": "CardioRoutine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:25:49.03Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoutineSuggestionService.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\RoutineSuggestionService.cs",
+              "RelativeDocumentMoniker": "RoutineSuggestionService.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\RoutineSuggestionService.cs",
+              "RelativeToolTip": "RoutineSuggestionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAvwAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:53:01.099Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
+              "RelativeDocumentMoniker": "DataManager.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto\\Proyecto1_Grupo1_C2\\DataManager.cs",
+              "RelativeToolTip": "DataManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:26:03.682Z",
+              "IsPinned": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
