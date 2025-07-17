@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +12,8 @@ namespace AppEntrenamientoPersonal.Entities
     /// </summary>
     public class StrengthRoutine : Routine
     {
-        public StrengthRoutine(int duration, string intensity, string muscleGroup, string atleteName)
-            : base("Fuerza", duration, intensity, muscleGroup, atleteName) { }
+        public StrengthRoutine(int duration, string intensity, string muscleGroup, string atleteName, DateTime? CreatedDate = null, DateTime? completedDate = null, TimeSpan? actualDuration = null)
+            : base("Cardio", duration, intensity, muscleGroup, atleteName, CreatedDate, completedDate, actualDuration) { }
 
         /// <summary>
         /// Specific implementation of how a force routine is described
@@ -21,9 +21,8 @@ namespace AppEntrenamientoPersonal.Entities
         /// </summary>
         public override string Describe()
         {
-            return $"[Fuerza] {Duration} min - Intensidad: {Intensity} - Grupo: {MuscleGroup}";
+            return $"[Fuerza] {Duration} min - Intensidad: {Intensity} - Grupo: {MuscleGroup} ";
         }
 
     }
 }
-
