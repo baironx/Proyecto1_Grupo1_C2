@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +12,8 @@ namespace AppEntrenamientoPersonal.Entities
     /// </summary>
     public class CardioRoutine : Routine
     {
-        public CardioRoutine(int duration, string intensity, string muscleGroup, string atleteName)
-            : base("Cardio", duration, intensity, muscleGroup, atleteName) { }
+        public CardioRoutine(int duration, string intensity, string muscleGroup, string atleteName, DateTime? CreatedDate = null, DateTime? completedDate = null, TimeSpan? actualDuration = null)
+            : base("Cardio", duration, intensity, muscleGroup, atleteName, CreatedDate, completedDate, actualDuration) { }
 
         /// <summary>
         /// Specific implementation of how a cardio routine is described
