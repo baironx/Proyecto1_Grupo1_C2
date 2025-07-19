@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,160 +8,129 @@ using AppEntrenamientoPersonal.Entities;
 
 namespace AppEntrenamientopersonal.Services
 {
-    /// <summary>
-    /// Static class responsible for saving and loading data from files
-    /// Handles the persistence of athletes and routines in text files
-    /// </summary>
     public static class DataManager
     {
-        // Paths of the files where the data is saved
-        private static string athletesFilePath = "athletes.txt"; //Athlete Archive
-        private static string routinesFilePath = "routines.txt"; //Routine Archive
+        private static string athletesFilePath = "athletes.txt";
+        private static string routinesFilePath = "routines.txt";
 
-        /// <summary>
-        /// Save athlete and routine lists in separate files
-        /// CSV format for easier reading later
-        /// </summary>
         public static void SaveData(List<Athlete> athletes, List<Routine> routines)
         {
             try
             {
-                // Save athletes in CSV format
                 using (StreamWriter sw = new StreamWriter(athletesFilePath))
                 {
                     foreach (var athlete in athletes)
                     {
-                        // Format: Name, Weight, Height, Goals, Level
                         sw.WriteLine($"{athlete.Name},{athlete.Weight},{athlete.Height},{athlete.Goals},{athlete.Level}");
                     }
                 }
 
-                // Save routines in CSV format
                 using (StreamWriter sw = new StreamWriter(routinesFilePath))
                 {
                     foreach (var routine in routines)
                     {
-                        // Format: Type, Duration, Intensity, MuscleGroup, AthleteName
-                        sw.WriteLine($"{routine.Type},{routine.Duration},{routine.Intensity},{routine.MuscleGroup},{routine.AthleteName}");
+                        sw.WriteLine($"{routine.Type},{routine.Duration},{routine.Intensity},{routine.MuscleGroup},{routine.AthleteName},{routine.RoutineName},{routine.PerformedDate:yyyy-MM-dd},{routine.ExpirationDate:yyyy-MM-dd},{routine.ExecutionTime.TotalMinutes},{routine.PostWorkoutInjuries}");
                     }
                 }
             }
             catch (Exception ex)
             {
-                // On error, throw custom exception with context
                 throw new InvalidOperationException($"Error al guardar datos: {ex.Message}", ex);
             }
         }
 
-        /// <summary>
-        /// Loads data from files and rebuilds athlete and routine lists
-        /// Uses 'out' parameters to return multiple values
-        /// </summary>
         public static void LoadData(out List<Athlete> athletes, out List<Routine> routines)
         {
-            // Initialize empty lists
             athletes = new List<Athlete>();
             routines = new List<Routine>();
 
             try
             {
-                // Load athletes if the file exists
                 if (File.Exists(athletesFilePath))
                 {
                     string[] athleteLines = File.ReadAllLines(athletesFilePath);
 
                     foreach (string line in athleteLines)
                     {
-                        // Skip empty lines
                         if (string.IsNullOrWhiteSpace(line)) continue;
-
-                        // Split the line by commas
                         string[] parts = line.Split(',');
-
-                        // Validate that it has all the necessary fields
                         if (parts.Length < 5) continue;
 
-                        // Try to convert weight and height to numbers
                         if (!double.TryParse(parts[1], out double weight)) continue;
                         if (!double.TryParse(parts[2], out double height)) continue;
 
-                        // Create and add the athlete
                         athletes.Add(new Athlete(parts[0], weight, height, parts[3], parts[4]));
                     }
                 }
 
-                // Load routines if the file exists
                 if (File.Exists(routinesFilePath))
                 {
                     string[] routineLines = File.ReadAllLines(routinesFilePath);
 
                     foreach (string line in routineLines)
                     {
-                        // Skip empty lines
                         if (string.IsNullOrWhiteSpace(line)) continue;
-
-                        // Split the line by commas
                         string[] parts = line.Split(',');
-
-                        // Validate that it has all the necessary fields
-                        if (parts.Length < 5) continue;
+                        if (parts.Length < 10) continue;
 
                         string type = parts[0];
-
-                        // Validate that the duration is a valid number
                         if (!int.TryParse(parts[1], out int duration)) continue;
-
                         string intensity = parts[2];
                         string muscleGroup = parts[3];
                         string athleteName = parts[4];
+                        string routineName = parts[5];
+                        if (!DateTime.TryParse(parts[6], out DateTime performedDate)) continue;
+                        if (!DateTime.TryParse(parts[7], out DateTime expirationDate)) continue;
+                        if (!double.TryParse(parts[8], out double totalMinutes)) continue;
+                        string postWorkoutInjuries = parts[9];
+                        TimeSpan executionTime = TimeSpan.FromMinutes(totalMinutes);
 
-                        // Verify that the athlete exists before creating the routine
                         if (!athletes.Any(a => a.Name == athleteName)) continue;
 
-                        // Create the specific routine according to its type
+                        Routine routine = null;
                         switch (type)
                         {
                             case "Fuerza":
-                                routines.Add(new StrengthRoutine(duration, intensity, muscleGroup, athleteName));
+                                routine = new StrengthRoutine(duration, intensity, muscleGroup, athleteName);
                                 break;
                             case "Cardio":
-                                routines.Add(new CardioRoutine(duration, intensity, muscleGroup, athleteName));
+                                routine = new CardioRoutine(duration, intensity, muscleGroup, athleteName);
                                 break;
+                        }
+
+                        if (routine != null)
+                        {
+                            routine.RoutineName = routineName;
+                            routine.PerformedDate = performedDate;
+                            routine.ExpirationDate = expirationDate;
+                            routine.ExecutionTime = executionTime;
+                            routine.PostWorkoutInjuries = postWorkoutInjuries;
+                            routines.Add(routine);
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                // On error, reset lists and throw exception
                 athletes = new List<Athlete>();
                 routines = new List<Routine>();
                 throw new InvalidOperationException($"Error al cargar datos: {ex.Message}", ex);
             }
         }
 
-        /// <summary>
-        /// Method for migrating data from the old format (a single file)
-        /// to the new format (separate files)
-        /// Maintains backward compatibility
-        /// </summary>
         public static void MigrateOldData()
         {
             string oldFilePath = "datos.txt";
-
-            // If the above file does not exist, there is nothing to migrate
             if (!File.Exists(oldFilePath)) return;
 
             try
             {
                 string[] lines = File.ReadAllLines(oldFilePath);
-
                 if (lines.Length == 0) return;
 
                 var athletes = new List<Athlete>();
                 var routines = new List<Routine>();
 
-                // Parse first line as athlete (old format)
                 string[] athleteData = lines[0].Split(',');
                 if (athleteData.Length >= 5)
                 {
@@ -171,7 +140,6 @@ namespace AppEntrenamientopersonal.Services
                         var athlete = new Athlete(athleteData[0], weight, height, athleteData[3], athleteData[4]);
                         athletes.Add(athlete);
 
-                        
                         for (int i = 1; i < lines.Length; i++)
                         {
                             var parts = lines[i].Split(',');
@@ -179,28 +147,33 @@ namespace AppEntrenamientopersonal.Services
 
                             string type = parts[0];
                             if (!int.TryParse(parts[1], out int duration)) continue;
-
                             string intensity = parts[2];
                             string muscleGroup = parts[3];
 
-                            // Create routines and assign them to the athlete
+                            Routine routine = null;
                             switch (type)
                             {
                                 case "Fuerza":
-                                    routines.Add(new StrengthRoutine(duration, intensity, muscleGroup, athlete.Name));
+                                    routine = new StrengthRoutine(duration, intensity, muscleGroup, athlete.Name);
                                     break;
                                 case "Cardio":
-                                    routines.Add(new CardioRoutine(duration, intensity, muscleGroup, athlete.Name));
+                                    routine = new CardioRoutine(duration, intensity, muscleGroup, athlete.Name);
                                     break;
+                            }
+
+                            if (routine != null)
+                            {
+                                routine.RoutineName = $"Routine {i}";
+                                routine.PerformedDate = DateTime.Now;
+                                routine.ExpirationDate = DateTime.Now.AddMonths(1);
+                                routine.ExecutionTime = TimeSpan.FromMinutes(duration);
+                                routine.PostWorkoutInjuries = "None";
+                                routines.Add(routine);
                             }
                         }
 
-                        // Save in the new format
                         SaveData(athletes, routines);
-
-                        // Delete old file after successful migration
                         File.Delete(oldFilePath);
-
                         Console.WriteLine("Datos migrados al nuevo formato exitosamente.");
                     }
                 }
@@ -210,5 +183,37 @@ namespace AppEntrenamientopersonal.Services
                 Console.WriteLine($"Error al migrar datos: {ex.Message}");
             }
         }
+
+        public static List<Routine> SearchRoutine(List<Routine> routines, string name = null, string type = null, int? duration = null)
+        {
+            return routines.Where(r =>
+                (name == null || r.RoutineName.Contains(name, StringComparison.OrdinalIgnoreCase)) &&
+                (type == null || r.Type.Equals(type, StringComparison.OrdinalIgnoreCase)) &&
+                (duration == null || r.Duration == duration)).ToList();
+        }
+
+        public static int CountLastMonthRoutines(List<Routine> routines)
+        {
+            DateTime now = DateTime.Now;
+            return routines.Count(r => r.PerformedDate >= now.AddMonths(-1) && r.PerformedDate <= now);
+        }
+
+        public static List<DateTime> GetInjuryDates(List<Routine> routines)
+        {
+            return routines
+                .Where(r => !string.IsNullOrWhiteSpace(r.PostWorkoutInjuries) && r.PostWorkoutInjuries != "None")
+                .Select(r => r.PerformedDate)
+                .ToList();
+        }
+
+        public static List<Routine> GetTop3LongestRoutines(List<Routine> routines)
+        {
+            DateTime now = DateTime.Now;
+            return routines
+                .Where(r => r.PerformedDate >= now.AddMonths(-1) && r.PerformedDate <= now)
+                .OrderByDescending(r => r.ExecutionTime)
+                .Take(3)
+                .ToList();
+        }
     }
-}
+} 
