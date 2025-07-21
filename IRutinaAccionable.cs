@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+using System;
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,4 +21,8 @@ namespace AppEntrenamientoPersonal.Entidades
         /// <returns>Una cadena que describe la rutina.</returns>
         string Describir();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063

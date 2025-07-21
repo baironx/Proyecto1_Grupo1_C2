@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AppEntrenamientoPersonal.Entidades;
@@ -61,6 +61,19 @@ namespace AppEntrenamientoPersonal
                 }
             }
         }
+        static void GestionarDeportistas() => ManejarDeportistas();
+        static void MostrarDeportistas() => MostrarDeportistasActuales();
+        static void AgregarDeportista() => AñadirDeportista();
+        static void SeleccionarDeportistaActivo() => SeleccionarDeportistaEnActivo();
+        static void EditarDeportista() => EditarInformacionDeportista();
+        static void EliminarDeportista() => BorrarDeportista();
+        static void AgregarRutina() => AñadirRutina();
+        static void MostrarRutinas() => MostrarRutinasDisponibles();
+        static void EditarRutina() => EditarInformacionRutina();
+        static void SugerirRutinas() => SugerirRutinasCompatibles();
+
+
+        // Renombrar métodos para consistencia en español
         static void GestionarDeportistas() => ManejarDeportistas();
         static void MostrarDeportistas() => MostrarDeportistasActuales();
         static void AgregarDeportista() => AñadirDeportista();

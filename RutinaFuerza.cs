@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+using System;
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,4 +27,8 @@ namespace AppEntrenamientoPersonal.Entidades
             return $"[Fuerza] {Duracion} min - Intensidad: {Intensidad} - Grupo: {GrupoMuscular} - Realizada: {FechaRealizacion.ToShortDateString()}";
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063

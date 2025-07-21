@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+using System;
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -223,4 +227,8 @@ namespace AppEntrenamientopersonal.Servicios
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f6641db85a1d75dcb5e8b8757d3177e790129063
