@@ -1,54 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using AppEntrenamientoPersonal.Entities;
-using AppEntrenamientopersonal.Services;
+using AppEntrenamientoPersonal.Entidades;
+using AppEntrenamientopersonal.Servicios;
 
 namespace AppEntrenamientoPersonal
 {
     /// <summary>
-    /// Main class containing the program entry point
-    /// and all console user interface logic
+    /// Clase principal que contiene el punto de entrada del programa
+    /// y toda la lógica de la interfaz de usuario de la consola.
     /// </summary>
-    class Program
+    class Programa
     {
-        // Global variables that maintain the state of the application
-        static List<Athlete> athletes = new List<Athlete>();
-        static List<Routine> routines = new List<Routine>();
-        static Athlete? currentAthlete = null;
+        // Variables globales que mantienen el estado de la aplicación
+        static List<Atleta> atletas = new List<Atleta>();
+        static List<Rutina> rutinas = new List<Rutina>();
+        static Atleta? atletaActual = null; 
 
         /// <summary>
-        /// Main program entry point
-        /// Loads data and executes the main menu loop
+        /// Punto de entrada principal del programa.
+        /// Carga datos y ejecuta el bucle del menú principal.
         /// </summary>
         static void Main(string[] args)
         {
-            DataManager.LoadData(out athletes, out routines);
+            GestorDatos.CargarDatos(out atletas, out rutinas); 
 
             bool continuar = true;
             while (continuar)
             {
-                Console.WriteLine("\n--- Menu Entrenamiento Personal ---");
+                Console.WriteLine("\n--- Menú Entrenamiento Personal ---");
                 Console.WriteLine("1. Gestionar deportistas");
                 Console.WriteLine("2. Agregar rutina de entrenamiento");
                 Console.WriteLine("3. Mostrar rutinas de entrenamiento");
                 Console.WriteLine("4. Editar rutina");
                 Console.WriteLine("5. Sugerir rutinas compatibles");
-                Console.WriteLine("6. Guardar y salir");
+                Console.WriteLine("6. Buscar rutina"); // Nueva funcionalidad
+                Console.WriteLine("7. Estadísticas de rutinas"); // Nueva funcionalidad
+                Console.WriteLine("8. Guardar y salir");
                 Console.Write("Seleccione una opción: ");
 
-                string option = Console.ReadLine() ?? "";
+                string opcion = Console.ReadLine() ?? "";
 
-                switch (option)
+                switch (opcion)
                 {
-                    case "1": ManageAthletes(); break;
-                    case "2": AddRoutine(); break;
-                    case "3": ShowRoutines(); break;
-                    case "4": EditRoutine(); break;
-                    case "5": SuggestRoutines(); break;
-                    case "6":
-                        DataManager.SaveData(athletes, routines); // Save data and exit
+                    case "1": GestionarDeportistas(); break;
+                    case "2": AgregarRutina(); break;
+                    case "3": MostrarRutinas(); break;
+                    case "4": EditarRutina(); break;
+                    case "5": SugerirRutinas(); break;
+                    case "6": BuscarRutina(); break; // Nueva llamada
+                    case "7": MostrarEstadisticas(); break; // Nueva llamada
+                    case "8":
+                        GestorDatos.GuardarDatos(atletas, rutinas); // Guardar datos y salir
                         Console.WriteLine("Datos guardados exitosamente.");
                         continuar = false;
                         break;
@@ -58,12 +61,23 @@ namespace AppEntrenamientoPersonal
                 }
             }
         }
+        static void GestionarDeportistas() => ManejarDeportistas();
+        static void MostrarDeportistas() => MostrarDeportistasActuales();
+        static void AgregarDeportista() => AñadirDeportista();
+        static void SeleccionarDeportistaActivo() => SeleccionarDeportistaEnActivo();
+        static void EditarDeportista() => EditarInformacionDeportista();
+        static void EliminarDeportista() => BorrarDeportista();
+        static void AgregarRutina() => AñadirRutina();
+        static void MostrarRutinas() => MostrarRutinasDisponibles();
+        static void EditarRutina() => EditarInformacionRutina();
+        static void SugerirRutinas() => SugerirRutinasCompatibles();
+
 
         /// <summary>
-        /// Submenu for complete athlete management
-        /// Allows you to create, edit, delete, and select athletes
+        /// Submenú para la gestión completa de deportistas.
+        /// Permite crear, editar, eliminar y seleccionar deportistas.
         /// </summary>
-        static void ManageAthletes()
+        static void ManejarDeportistas()
         {
             while (true)
             {
@@ -76,15 +90,15 @@ namespace AppEntrenamientoPersonal
                 Console.WriteLine("6. Volver al menú principal");
                 Console.Write("Seleccione una opción: ");
 
-                string option = Console.ReadLine() ?? "";
+                string opcion = Console.ReadLine() ?? "";
 
-                switch (option)
+                switch (opcion)
                 {
-                    case "1": ShowAthletes(); break;
-                    case "2": AddAthlete(); break;
-                    case "3": SelectActiveAthlete(); break;
-                    case "4": EditAthlete(); break;
-                    case "5": DeleteAthlete(); break;
+                    case "1": MostrarDeportistasActuales(); break;
+                    case "2": AñadirDeportista(); break;
+                    case "3": SeleccionarDeportistaEnActivo(); break;
+                    case "4": EditarInformacionDeportista(); break;
+                    case "5": BorrarDeportista(); break;
                     case "6": return;
                     default:
                         Console.WriteLine("Opción no válida.");
@@ -94,65 +108,65 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Displays the list of all registered athletes
-        /// Indicates which athlete is currently active
+        /// Muestra la lista de todos los deportistas registrados.
+        /// Indica qué deportista está actualmente activo.
         /// </summary>
-        static void ShowAthletes()
+        static void MostrarDeportistasActuales()
         {
             Console.WriteLine("\n--- Lista de Deportistas ---");
-            if (athletes.Count == 0)
+            if (atletas.Count == 0)
             {
                 Console.WriteLine("No hay deportistas registrados.");
                 return;
             }
-            // Display each athlete with their index number
-            for (int i = 0; i < athletes.Count; i++)
+            // Mostrar cada deportista con su número de índice
+            for (int i = 0; i < atletas.Count; i++)
             {
-                // Mark the active athlete
-                string active = athletes[i] == currentAthlete ? " (ACTIVO)" : "";
-                Console.WriteLine($"{i + 1}. {athletes[i]}{active}");
+                // Marcar el deportista activo
+                string activo = atletas[i] == atletaActual ? " (ACTIVO)" : "";
+                Console.WriteLine($"{i + 1}. {atletas[i]}{activo}");
             }
         }
 
         /// <summary>
-        /// Process for adding a new athlete to the system
-        /// Request all necessary data with validation
+        /// Proceso para añadir un nuevo deportista al sistema.
+        /// Solicita todos los datos necesarios con validación.
         /// </summary>
-        static void AddAthlete()
+        static void AñadirDeportista()
         {
             Console.Write("Nombre del deportista: ");
-            string name = Console.ReadLine() ?? "";
+            string nombre = Console.ReadLine() ?? "";
 
-            // Validate weight with loop until obtaining a valid value
+            // Validar peso con bucle hasta obtener un valor válido
             Console.Write("Peso del deportista (kg): ");
-            double weight;
-            while (!double.TryParse(Console.ReadLine(), out weight) || weight <= 0)
+            double peso;
+            while (!double.TryParse(Console.ReadLine(), out peso) || peso <= 0)
             {
                 Console.Write("Por favor ingrese un peso válido: ");
             }
 
-            // Validate height with loop until obtaining a valid value
+            // Validar altura con bucle hasta obtener un valor válido
             Console.Write("Altura del deportista (m): ");
-            double height;
-            while (!double.TryParse(Console.ReadLine(), out height) || height <= 0)
+            double altura;
+            while (!double.TryParse(Console.ReadLine(), out altura) || altura <= 0)
             {
                 Console.Write("Por favor ingrese una altura válida: ");
             }
 
-            Console.Write("Objetivos del deportista (Fuerza/Resistencia/Perdida de peso/Ganancia muscular): ");
-            string goals = Console.ReadLine() ?? "";
+            Console.Write("Objetivos del deportista (Fuerza/Resistencia/Pérdida de peso/Ganancia muscular): ");
+            string objetivos = Console.ReadLine() ?? "";
 
             Console.Write("Nivel del deportista (Principiante/Intermedio/Avanzado): ");
-            string level = Console.ReadLine() ?? "";
+            string nivel = Console.ReadLine() ?? "";
 
-            // Create new athlete and add it to the roster
-            var newAthlete = new Athlete(name, weight, height, goals, level);
-            athletes.Add(newAthlete);
+            // Crear nuevo deportista y añadirlo a la lista
+            var nuevoAtleta = new Atleta(nombre, peso, altura, objetivos, nivel);
+            atletas.Add(nuevoAtleta);
 
-            // If it is the first athlete, automatically select as active
-            if (currentAthlete == null)
+            // Si es el primer deportista, seleccionarlo automáticamente como activo
+            if (atletaActual == null)
             {
-                currentAthlete = newAthlete;
+                atletaActual = nuevoAtleta;
                 Console.WriteLine($"Atleta registrado exitosamente y seleccionado como activo.");
             }
             else
@@ -162,25 +176,25 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Allows you to select which athlete will be active for operations
-        /// The active athlete is the one used to create/display routines
+        /// Permite seleccionar qué deportista estará activo para las operaciones.
+        /// El deportista activo es el que se usa para crear/mostrar rutinas.
         /// </summary>
-        static void SelectActiveAthlete()
+        static void SeleccionarDeportistaEnActivo()
         {
-            if (athletes.Count == 0)
+            if (atletas.Count == 0)
             {
                 Console.WriteLine("No hay deportistas registrados.");
                 return;
             }
 
-            ShowAthletes();
+            MostrarDeportistasActuales();
             Console.Write("Seleccione el número del deportista: ");
 
-            // Validate selection and assign active athlete
-            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= athletes.Count)
+            // Validar selección y asignar deportista activo
+            if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= atletas.Count)
             {
-                currentAthlete = athletes[index - 1];
-                Console.WriteLine($"Deportista activo: {currentAthlete.Name}");
+                atletaActual = atletas[indice - 1];
+                Console.WriteLine($"Deportista activo: {atletaActual.Nombre}");
             }
             else
             {
@@ -189,52 +203,52 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Allows you to modify an existing athlete's data
-        /// Keeps current values ​​if the user presses Enter without entering anything
+        /// Permite modificar los datos de un deportista existente.
+        /// Mantiene los valores actuales si el usuario presiona Enter sin ingresar nada.
         /// </summary>
-        static void EditAthlete()
+        static void EditarInformacionDeportista()
         {
-            if (athletes.Count == 0) // Check if there are registered athletes
+            if (atletas.Count == 0) // Verificar si hay deportistas registrados
             {
                 Console.WriteLine("No hay deportistas registrados.");
                 return;
             }
 
-            // Show list of available athletes
-            ShowAthletes(); 
+            // Mostrar lista de deportistas disponibles
+            MostrarDeportistasActuales();
             Console.Write("Seleccione el número del deportista a editar: ");
-            // Validate the user's selection
-            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= athletes.Count)
+            // Validar la selección del usuario
+            if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= atletas.Count)
             {
-                // Get the selected athlete
-                var athlete = athletes[index - 1];
-                Console.WriteLine($"\nEditando: {athlete.Name}");
+                // Obtener el deportista seleccionado
+                var atleta = atletas[indice - 1];
+                Console.WriteLine($"\nEditando: {atleta.Nombre}");
                 Console.WriteLine("Presione Enter para mantener el valor actual");
 
-                // Edit name (keep current if Enter is pressed)
-                Console.Write($"Nombre ({athlete.Name}): ");
-                string name = Console.ReadLine()!;
-                if (!string.IsNullOrWhiteSpace(name)) athlete.Name = name;
+                // Editar nombre (mantener actual si se presiona Enter)
+                Console.Write($"Nombre ({atleta.Nombre}): ");
+                string nombre = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(nombre)) atleta.Nombre = nombre;
 
-                // Edit weight with validation
-                Console.Write($"Peso ({athlete.Weight} kg): ");
-                string weightStr = Console.ReadLine()!;
-                if (double.TryParse(weightStr, out double weight) && weight > 0) athlete.Weight = weight;
+                // Editar peso con validación
+                Console.Write($"Peso ({atleta.Peso} kg): ");
+                string pesoStr = Console.ReadLine()!;
+                if (double.TryParse(pesoStr, out double peso) && peso > 0) atleta.Peso = peso;
 
-                // Edit height with validation
-                Console.Write($"Altura ({athlete.Height} m): ");
-                string heightStr = Console.ReadLine()!;
-                if (double.TryParse(heightStr, out double height) && height > 0) athlete.Height = height;
+                // Editar altura con validación
+                Console.Write($"Altura ({atleta.Altura} m): ");
+                string alturaStr = Console.ReadLine()!;
+                if (double.TryParse(alturaStr, out double altura) && altura > 0) atleta.Altura = altura;
 
-                // Edit goals
-                Console.Write($"Objetivos ({athlete.Goals}): ");
-                string goals = Console.ReadLine()!;
-                if (!string.IsNullOrWhiteSpace(goals)) athlete.Goals = goals;
+                // Editar objetivos
+                Console.Write($"Objetivos ({atleta.Objetivos}): ");
+                string objetivos = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(objetivos)) atleta.Objetivos = objetivos;
 
-                // Edit level
-                Console.Write($"Nivel ({athlete.Level}): ");
-                string level = Console.ReadLine()!;
-                if (!string.IsNullOrWhiteSpace(level)) athlete.Level = level;
+                // Editar nivel
+                Console.Write($"Nivel ({atleta.Nivel}): ");
+                string nivel = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(nivel)) atleta.Nivel = nivel;
 
                 Console.WriteLine("Deportista actualizado exitosamente.");
             }
@@ -245,35 +259,35 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Remove an athlete from the system with user confirmation
+        /// Elimina un deportista del sistema con confirmación del usuario.
         /// </summary>
-        static void DeleteAthlete()
+        static void BorrarDeportista()
         {
-            // Check if there are athletes to eliminate
-            if (athletes.Count == 0)
+            // Verificar si hay deportistas para eliminar
+            if (atletas.Count == 0)
             {
                 Console.WriteLine("No hay deportistas registrados.");
                 return;
             }
 
-            ShowAthletes();
+            MostrarDeportistasActuales();
             Console.Write("Seleccione el número del deportista a eliminar: ");
 
-            // Validate the user's selection
-            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= athletes.Count)
+            // Validar la selección del usuario
+            if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= atletas.Count)
             {
-                // Check if there are athletes to eliminate
-                var athleteToDelete = athletes[index - 1];
-                Console.Write($"¿Está seguro de eliminar a {athleteToDelete.Name}? (s/n): ");
+                // Obtener el deportista a eliminar
+                var atletaAEliminar = atletas[indice - 1];
+                Console.Write($"¿Está seguro de eliminar a {atletaAEliminar.Nombre}? (s/n): ");
 
                 if (Console.ReadLine()?.ToLower() == "s")
                 {
-                    // Remove the athlete from the list
-                    athletes.RemoveAt(index - 1);
-                    // If the deleted athlete was active, reset the current athlete
-                    if (currentAthlete == athleteToDelete) 
+                    // Eliminar el deportista de la lista
+                    atletas.RemoveAt(indice - 1);
+                    // Si el deportista eliminado era el activo, reiniciar el deportista actual
+                    if (atletaActual == atletaAEliminar)
                     {
-                        currentAthlete = athletes.Count > 0 ? athletes[0] : null;
+                        atletaActual = atletas.Count > 0 ? atletas[0] : null;
                     }
                     Console.WriteLine("Deportista eliminado exitosamente.");
                 }
@@ -285,45 +299,77 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Add a new routine for the active athlete
-        /// Create strength or cardio routines based on the user's selection
+        /// Agrega una nueva rutina para el deportista activo.
+        /// Crea rutinas de fuerza o cardio según la selección del usuario.
         /// </summary>
-        static void AddRoutine()
+        static void AñadirRutina()
         {
-            // Verify that there is an active athlete selected
-            if (currentAthlete == null)
+            // Verificar que haya un deportista activo seleccionado
+            if (atletaActual == null)
             {
                 Console.WriteLine("Debe seleccionar un deportista activo primero.");
                 return;
             }
 
-            // Request routine type
+            // Solicitar tipo de rutina
             Console.Write("Tipo de rutina (Fuerza/Cardio): ");
-            string type = Console.ReadLine() ?? "";
+            string tipo = Console.ReadLine() ?? "";
 
-            // Request duration with validation
+            // Solicitar duración con validación
             Console.Write("Duración de la rutina (min): ");
-            int duration;
-            while (!int.TryParse(Console.ReadLine(), out duration) || duration <= 0)
+            int duracion;
+            while (!int.TryParse(Console.ReadLine(), out duracion) || duracion <= 0)
             {
                 Console.Write("Por favor ingrese una duración válida: ");
             }
-            // Request intensity
-            Console.Write("Intensidad de la rutina (Baja/Media/Alta): ");
-            string intensity = Console.ReadLine() ?? "";
-            // Request muscle group for strength routines
-            Console.Write("Grupo muscular (Pecho/Espalda/Piernas/Brazos/Cardio): ");
-            string muscleGroup = Console.ReadLine() ?? "";
 
-            // Create the routine according to the specified type
-            switch (type.ToLower())
+            // Solicitar intensidad
+            Console.Write("Intensidad de la rutina (Baja/Media/Alta): ");
+            string intensidad = Console.ReadLine() ?? "";
+
+            // Solicitar grupo muscular para rutinas de fuerza
+            Console.Write("Grupo muscular (Pecho/Espalda/Piernas/Brazos/Cardio): ");
+            string grupoMuscular = Console.ReadLine() ?? "";
+
+            // Nuevo: Fecha en que se realizó la rutina
+            Console.Write("Fecha de realización (AAAA-MM-DD, dejar vacío para hoy): ");
+            DateTime fechaRealizacion = DateTime.Today; // Inicializar con valor por defecto
+            string fechaRealizacionStr = Console.ReadLine() ?? "";
+            if (!string.IsNullOrWhiteSpace(fechaRealizacionStr))
+            {
+                if (!DateTime.TryParse(fechaRealizacionStr, out fechaRealizacion))
+                {
+                    Console.WriteLine("Formato de fecha inválido. Se usará la fecha actual.");
+                    fechaRealizacion = DateTime.Today;
+                }
+            }
+
+            // Nuevo: Fecha en que vence la rutina
+            Console.Write("Fecha de vencimiento (AAAA-MM-DD, dejar vacío si no aplica): ");
+            DateTime? fechaVencimiento = null;
+            string fechaVencimientoStr = Console.ReadLine() ?? "";
+            if (!string.IsNullOrWhiteSpace(fechaVencimientoStr) && DateTime.TryParse(fechaVencimientoStr, out DateTime parsedFechaVencimiento))
+            {
+                fechaVencimiento = parsedFechaVencimiento;
+            }
+            else if (string.IsNullOrWhiteSpace(fechaVencimientoStr))
+            {
+                fechaVencimiento = null; // Asegurarse de que sea nulo si no se ingresa nada
+            }
+
+            // Nuevo: Lesiones post-entrenamiento
+            Console.Write("Lesiones producidas post-entrenamiento (dejar vacío si no hay): ");
+            string lesionesPostEntrenamiento = Console.ReadLine() ?? "";
+
+            // Crear la rutina según el tipo especificado
+            switch (tipo.ToLower())
             {
                 case "fuerza":
-                    routines.Add(new StrengthRoutine(duration, intensity, muscleGroup, currentAthlete.Name));
+                    rutinas.Add(new RutinaFuerza(duracion, intensidad, grupoMuscular, atletaActual.Nombre, fechaRealizacion, fechaVencimiento, lesionesPostEntrenamiento));
                     Console.WriteLine("Rutina de fuerza agregada exitosamente.");
                     break;
                 case "cardio":
-                    routines.Add(new CardioRoutine(duration, intensity, muscleGroup, currentAthlete.Name));
+                    rutinas.Add(new RutinaCardio(duracion, intensidad, grupoMuscular, atletaActual.Nombre, fechaRealizacion, fechaVencimiento, lesionesPostEntrenamiento));
                     Console.WriteLine("Rutina de cardio agregada exitosamente.");
                     break;
                 default:
@@ -333,82 +379,108 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Shows all the active athlete's routines
+        /// Muestra todas las rutinas del deportista activo.
         /// </summary>
-        static void ShowRoutines()
+        static void MostrarRutinasDisponibles()
         {
-            // Verify that there is an active athlete
-            if (currentAthlete == null)
+            // Verificar que haya un deportista activo
+            if (atletaActual == null)
             {
                 Console.WriteLine("Debe seleccionar un deportista activo primero.");
                 return;
             }
 
-            Console.WriteLine($"\n--- Rutinas de {currentAthlete.Name} ---");
-            var athleteRoutines = routines.Where(r => r.AthleteName == currentAthlete.Name).ToList(); // Filter active athlete routines
+            Console.WriteLine($"\n--- Rutinas de {atletaActual.Nombre} ---");
+            var rutinasAtleta = rutinas.Where(r => r.NombreAtleta == atletaActual.Nombre).ToList(); // Filtrar rutinas del atleta activo
 
-            if (athleteRoutines.Count == 0) // Check if the athlete has routines
+            if (rutinasAtleta.Count == 0) // Verificar si el atleta tiene rutinas
             {
-                Console.WriteLine("No hay rutinas registradas para este deportista.");
+                Console.WriteLine($"No hay rutinas registradas para {atletaActual.Nombre}.");
                 return;
             }
 
-            for (int i = 0; i < athleteRoutines.Count; i++)
+            // Mostrar cada rutina con su número de índice
+            for (int i = 0; i < rutinasAtleta.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {athleteRoutines[i].Describe()}");
+                Console.WriteLine($"{i + 1}. {rutinasAtleta[i].Describir()}");
             }
         }
 
         /// <summary>
-        /// Allows editing of an existing routine for the active athlete
-        /// Keeps current values ​​if Enter is pressed without entering data
+        /// Permite modificar una rutina existente para el deportista activo.
         /// </summary>
-        static void EditRoutine()
+        static void EditarInformacionRutina()
         {
-            if (currentAthlete == null)
+            // Verificar si hay un deportista activo y si tiene rutinas
+            if (atletaActual == null)
             {
                 Console.WriteLine("Debe seleccionar un deportista activo primero.");
                 return;
             }
-            // Get routines for active athletes
-            var athleteRoutines = routines.Where(r => r.AthleteName == currentAthlete.Name).ToList();
 
-            if (athleteRoutines.Count == 0)
+            var rutinasAtleta = rutinas.Where(r => r.NombreAtleta == atletaActual.Nombre).ToList();
+            if (rutinasAtleta.Count == 0)
             {
-                Console.WriteLine("No hay rutinas registradas para este deportista.");
+                Console.WriteLine($"No hay rutinas para editar para {atletaActual.Nombre}.");
                 return;
             }
 
-            // Show routines available for editing
-            Console.WriteLine($"\n--- Rutinas de {currentAthlete.Name} ---");
-            for (int i = 0; i < athleteRoutines.Count; i++)
-            {
-                Console.WriteLine($"{i + 1}. {athleteRoutines[i].Describe()}");
-            }
-
+            MostrarRutinasDisponibles();
             Console.Write("Seleccione el número de la rutina a editar: ");
 
-            // Validate selection and proceed with editing
-            if (int.TryParse(Console.ReadLine(), out int index) && index > 0 && index <= athleteRoutines.Count)
+            // Validar la selección de la rutina
+            if (int.TryParse(Console.ReadLine(), out int indice) && indice > 0 && indice <= rutinasAtleta.Count)
             {
-                var routine = athleteRoutines[index - 1];
-                Console.WriteLine($"\nEditando rutina: {routine.Describe()}");
+                var rutina = rutinasAtleta[indice - 1]; // Obtener la rutina seleccionada
+                Console.WriteLine($"\nEditando: {rutina.Describir()}");
                 Console.WriteLine("Presione Enter para mantener el valor actual");
 
-                // Edit duration with validation
-                Console.Write($"Duración ({routine.Duration} min): ");
-                string durationStr = Console.ReadLine()!;
-                if (int.TryParse(durationStr, out int duration) && duration > 0) routine.Duration = duration;
+                // Editar duración con validación
+                Console.Write($"Duración ({rutina.Duracion} min): ");
+                string duracionStr = Console.ReadLine()!;
+                if (int.TryParse(duracionStr, out int duracion) && duracion > 0) rutina.Duracion = duracion;
 
-                // Edit intensity
-                Console.Write($"Intensidad ({routine.Intensity}): ");
-                string intensity = Console.ReadLine()!;
-                if (!string.IsNullOrWhiteSpace(intensity)) routine.Intensity = intensity;
+                // Editar intensidad
+                Console.Write($"Intensidad ({rutina.Intensidad}): ");
+                string intensidad = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(intensidad)) rutina.Intensidad = intensidad;
 
-                // Edit muscle group
-                Console.Write($"Grupo muscular ({routine.MuscleGroup}): ");
-                string muscleGroup = Console.ReadLine()!;
-                if (!string.IsNullOrWhiteSpace(muscleGroup)) routine.MuscleGroup = muscleGroup;
+                // Editar grupo muscular
+                Console.Write($"Grupo Muscular ({rutina.GrupoMuscular}): ");
+                string grupoMuscular = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(grupoMuscular)) rutina.GrupoMuscular = grupoMuscular;
+
+                // Editar fecha de realización
+                Console.Write($"Fecha de Realización ({rutina.FechaRealizacion.ToShortDateString()} - AAAA-MM-DD): ");
+                string fechaRealizacionStr = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(fechaRealizacionStr) && DateTime.TryParse(fechaRealizacionStr, out DateTime fechaRealizacion))
+                {
+                    rutina.FechaRealizacion = fechaRealizacion;
+                }
+
+                // Editar fecha de vencimiento
+                Console.Write($"Fecha de Vencimiento ({(rutina.FechaVencimiento.HasValue ? rutina.FechaVencimiento.Value.ToShortDateString() : "No aplica")} - AAAA-MM-DD, dejar vacío si no aplica): ");
+                string fechaVencimientoStr = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(fechaVencimientoStr))
+                {
+                    if (DateTime.TryParse(fechaVencimientoStr, out DateTime parsedFechaVencimiento))
+                    {
+                        rutina.FechaVencimiento = parsedFechaVencimiento;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Formato de fecha de vencimiento inválido. No se actualizará.");
+                    }
+                }
+                else
+                {
+                    rutina.FechaVencimiento = null; // Si se deja vacío, se establece como nulo
+                }
+
+                // Editar lesiones post-entrenamiento
+                Console.Write($"Lesiones Post-Entrenamiento ({rutina.LesionesPostEntrenamiento}): ");
+                string lesionesPostEntrenamiento = Console.ReadLine()!;
+                if (!string.IsNullOrWhiteSpace(lesionesPostEntrenamiento)) rutina.LesionesPostEntrenamiento = lesionesPostEntrenamiento;
 
                 Console.WriteLine("Rutina actualizada exitosamente.");
             }
@@ -419,29 +491,161 @@ namespace AppEntrenamientoPersonal
         }
 
         /// <summary>
-        /// Shows suggested routines for the active athlete
-        /// based on their level and goals
+        /// Sugiere rutinas de entrenamiento basadas en los objetivos y el nivel del deportista activo.
         /// </summary>
-        static void SuggestRoutines()
+        static void SugerirRutinasCompatibles()
         {
-            if (currentAthlete == null)
+            // Verificar si hay un deportista activo
+            if (atletaActual == null)
+            {
+                Console.WriteLine("Debe seleccionar un deportista activo primero para obtener sugerencias.");
+                return;
+            }
+
+            Console.WriteLine($"\n--- Sugerencias de Rutinas para {atletaActual.Nombre} ({atletaActual.Nivel} - {atletaActual.Objetivos}) ---");
+            // Obtener sugerencias usando el servicio
+            var sugerencias = ServicioSugerenciaRutina.ObtenerRutinasSugeridas(atletaActual); // Usar la clase traducida
+
+            if (sugerencias.Any())
+            {
+                foreach (var sugerencia in sugerencias)
+                {
+                    Console.WriteLine($"- {sugerencia}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No se encontraron sugerencias de rutinas para este deportista.");
+            }
+        }
+
+        /// <summary>
+        /// Permite al usuario buscar rutinas por un término dado.
+        /// </summary>
+        static void BuscarRutina()
+        {
+            if (atletaActual == null)
             {
                 Console.WriteLine("Debe seleccionar un deportista activo primero.");
                 return;
             }
 
-            // Display athlete information
-            Console.WriteLine($"\n--- Sugerencias para {currentAthlete.Name} ---");
-            Console.WriteLine($"Nivel: {currentAthlete.Level}");
-            Console.WriteLine($"Objetivos: {currentAthlete.Goals}");
+            Console.Write("Ingrese un término de búsqueda para las rutinas (ej. 'Cardio', 'Fuerza', 'Piernas'): ");
+            string terminoBusqueda = Console.ReadLine()?.ToLower() ?? "";
 
-            var suggestions = RoutineSuggestionService.GetSuggestedRoutines(currentAthlete); // Get suggestions from specialized service
+            var rutinasEncontradas = rutinas.Where(r => r.NombreAtleta == atletaActual.Nombre &&
+                                                        (r.Tipo.ToLower().Contains(terminoBusqueda) ||
+                                                         r.Intensidad.ToLower().Contains(terminoBusqueda) ||
+                                                         r.GrupoMuscular.ToLower().Contains(terminoBusqueda) ||
+                                                         r.Describir().ToLower().Contains(terminoBusqueda)))
+                                            .ToList();
 
-            // Show suggested routines
-            Console.WriteLine("\nRutinas sugeridas:");
-            foreach (var suggestion in suggestions)
+            if (rutinasEncontradas.Any())
             {
-                Console.WriteLine($"- {suggestion}");
+                Console.WriteLine($"\n--- Rutinas encontradas para '{terminoBusqueda}' para {atletaActual.Nombre} ---");
+                foreach (var rutina in rutinasEncontradas)
+                {
+                    Console.WriteLine($"- {rutina.Describir()}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"No se encontraron rutinas para '{terminoBusqueda}' para {atletaActual.Nombre}.");
+            }
+        }
+
+        /// <summary>
+        /// Muestra estadísticas generales y específicas sobre las rutinas del deportista activo.
+        /// </summary>
+        static void MostrarEstadisticas()
+        {
+            if (atletaActual == null)
+            {
+                Console.WriteLine("Debe seleccionar un deportista activo primero.");
+                return;
+            }
+
+            var rutinasAtleta = rutinas.Where(r => r.NombreAtleta == atletaActual.Nombre).ToList();
+            if (!rutinasAtleta.Any())
+            {
+                Console.WriteLine($"No hay rutinas registradas para {atletaActual.Nombre} para mostrar estadísticas.");
+                return;
+            }
+
+            Console.WriteLine($"\n--- Estadísticas de Rutinas para {atletaActual.Nombre} ---");
+
+            // 1. Número total de rutinas
+            Console.WriteLine($"\nTotal de rutinas registradas: {rutinasAtleta.Count}");
+
+            // 2. Duración promedio de las rutinas
+            double duracionPromedio = rutinasAtleta.Average(r => r.Duracion);
+            Console.WriteLine($"Duración promedio de las rutinas: {duracionPromedio:F2} minutos");
+
+            // 3. Conteo de rutinas por tipo
+            Console.WriteLine("\nConteo de rutinas por tipo:");
+            var conteoPorTipo = rutinasAtleta.GroupBy(r => r.Tipo)
+                                            .Select(g => new { Tipo = g.Key, Cantidad = g.Count() });
+            foreach (var item in conteoPorTipo)
+            {
+                Console.WriteLine($"- {item.Tipo}: {item.Cantidad}");
+            }
+
+            // 4. Fechas de lesiones post-entrenamiento
+            Console.WriteLine("\nFechas de lesiones post-entrenamiento:");
+            var rutinasConLesion = rutinasAtleta.Where(r => !string.IsNullOrEmpty(r.LesionesPostEntrenamiento)).ToList();
+            if (rutinasConLesion.Any())
+            {
+                foreach (var rutina in rutinasConLesion)
+                {
+                    Console.WriteLine($"- Fecha: {rutina.FechaRealizacion.ToShortDateString()}, Lesión: {rutina.LesionesPostEntrenamiento}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No se registraron lesiones post-entrenamiento.");
+            }
+
+            // 5. Rutinas con vencimiento en los próximos 30 días
+            Console.WriteLine("\nRutinas con vencimiento en los próximos 30 días:");
+            DateTime hoy = DateTime.Today;
+            DateTime fechaLimite = hoy.AddDays(30);
+            var rutinasProximoVencimiento = rutinasAtleta.Where(r => r.FechaVencimiento.HasValue &&
+                                                                   r.FechaVencimiento.Value >= hoy &&
+                                                                   r.FechaVencimiento.Value <= fechaLimite)
+                                                       .OrderBy(r => r.FechaVencimiento)
+                                                       .ToList();
+            if (rutinasProximoVencimiento.Any())
+            {
+                foreach (var rutina in rutinasProximoVencimiento)
+                {
+                    Console.WriteLine($"- {rutina.Describir()} - Vence: {rutina.FechaVencimiento.Value.ToShortDateString()}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No hay rutinas que venzan en los próximos 30 días.");
+            }
+
+
+            // 6. Listar las 3 rutinas que le tomó más tiempo realizar en el último mes.
+            Console.WriteLine("\nLas 3 rutinas más largas en el último mes:");
+            var unMesAtras = DateTime.Today.AddMonths(-1);
+            var rutinasUltimoMes = rutinasAtleta.Where(r => r.FechaRealizacion >= unMesAtras).ToList();
+
+            var top3RutinasMasLargas = rutinasUltimoMes
+                                        .OrderByDescending(r => r.Duracion)
+                                        .Take(3)
+                                        .ToList();
+            if (top3RutinasMasLargas.Any())
+            {
+                foreach (var rutina in top3RutinasMasLargas)
+                {
+                    Console.WriteLine($"- {rutina.Describir()}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No hay suficientes rutinas en el último mes para mostrar las 3 más largas.");
             }
         }
     }

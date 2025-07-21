@@ -1,1 +1,1 @@
-Fuerza,60,Alta,Pecho,Bairon Garcia
+Fuerza,40,Media,Piernas,Bairon Garcia Alvarado

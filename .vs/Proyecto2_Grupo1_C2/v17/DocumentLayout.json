@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\rutina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:rutina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\serviciosugerenciarutina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:serviciosugerenciarutina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\rutinacardio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:rutinacardio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\rutinafuerza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:rutinafuerza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\irutinaaccionable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:irutinaaccionable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|c:\\users\\cuadr\\desktop\\universidad\\proyecto2_grupo1_c2\\proyecto2_grupo1_c2\\gestordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A57BFA9-67E3-4024-A81A-DC7136FD5F52}|Proyecto2Grupo1_C2.csproj|solutionrelative:gestordatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:16.639Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRutinaAccionable.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\IRutinaAccionable.cs",
+              "RelativeDocumentMoniker": "IRutinaAccionable.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\IRutinaAccionable.cs",
+              "RelativeToolTip": "IRutinaAccionable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T02:52:54.23Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rutina.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Rutina.cs",
+              "RelativeDocumentMoniker": "Rutina.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Rutina.cs",
+              "RelativeToolTip": "Rutina.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:16.007Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RutinaFuerza.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\RutinaFuerza.cs",
+              "RelativeDocumentMoniker": "RutinaFuerza.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\RutinaFuerza.cs",
+              "RelativeToolTip": "RutinaFuerza.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:17.8Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RutinaCardio.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\RutinaCardio.cs",
+              "RelativeDocumentMoniker": "RutinaCardio.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\RutinaCardio.cs",
+              "RelativeToolTip": "RutinaCardio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:10.334Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Atleta.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Atleta.cs",
+              "RelativeDocumentMoniker": "Atleta.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\Atleta.cs",
+              "RelativeToolTip": "Atleta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:07.219Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServicioSugerenciaRutina.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\ServicioSugerenciaRutina.cs",
+              "RelativeDocumentMoniker": "ServicioSugerenciaRutina.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\ServicioSugerenciaRutina.cs",
+              "RelativeToolTip": "ServicioSugerenciaRutina.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:17.287Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GestorDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\GestorDatos.cs",
+              "RelativeDocumentMoniker": "GestorDatos.cs",
+              "ToolTip": "C:\\Users\\Cuadr\\Desktop\\Universidad\\Proyecto2_Grupo1_C2\\Proyecto2_Grupo1_C2\\GestorDatos.cs",
+              "RelativeToolTip": "GestorDatos.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T17:07:15.359Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
